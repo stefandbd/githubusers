@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+  background-color: #efefef;
+  min-height: 100vh;
+  height: 100%;
+  box-sizing: border-box;
+  color: #f2f2f2;
+  padding-top: 10px;
+  font-family: monospace; }
+  .App * {
+    transition: all ease .25s; }
+
+.clickable {
+  cursor: pointer; }
+
+.mobile-container {
+  width: 100%;
+  max-width: 540px;
+  padding: 5px 10px;
+  margin: 0 auto; }
+
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  animation: sk-rotate 2.0s infinite linear; }
+
+.dot1,
+.dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #d0d5cf;
+  border-radius: 100%;
+  animation: sk-bounce 2.0s infinite ease-in-out; }
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1.0s; }
+
+@keyframes sk-rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0); }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
+
+.user-page .page-link {
+  background: #efefef;
+  color: #525252;
+  border: none; }
+
+.user-page .page-item.active .page-link {
+  background: #b6b6b6; }
+
+.user-page .wrapper {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative; }
+
+.user-page .wrapper img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px; }
+
+.user-page .titleUser {
+  font-size: 30px;
+  font-weight: 600; }
+
+.user-page .titleDetail {
+  font-size: 20px;
+  font-weight: 600; }
+
+.user-page .jContainer {
+  display: flex;
+  flex-direction: row; }
+
+.user-page .columnImage img {
+  width: 120px;
+  border-radius: 15%;
+  margin-right: 35px; }
+
+.user-page .jumbotron h1 {
+  font-size: 30px; }
+
+.user-page .lead {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 25px; }
+
+.user-page .breadcrumb-item span {
+  color: #999; }
+
+.user-page .list-group-item h2 {
+  color: #636363;
+  font-size: 20px;
+  margin-left: 20px;
+  line-height: 75px; }
+
+.user-page .jumbotron {
+  background: #efefef;
+  color: #636363;
+  padding: 2rem 2rem; }
+
+.user-page .list-group-item {
+  display: flex;
+  flex-direction: row; }
